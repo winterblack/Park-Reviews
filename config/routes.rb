@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   namespace :api, defaults: {format: :json} do
     resources :parks, only: [:index, :create]
     resource :user, only: [:create]
